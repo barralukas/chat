@@ -95,7 +95,7 @@ const handleLogin = (event) => {
   login.style.display = "none"
   chat.style.display = "flex"
 
-  websocket = new WebSocket("ws://localhost:8080")
+  websocket = new WebSocket("wss://chat-backend-cagu.onrender.com")
   websocket.onmessage = processMessage
 }
 
